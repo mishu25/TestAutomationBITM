@@ -32,4 +32,7 @@ public class TestBase {
         driver.close();
         System.out.println("Firefox closed");
     }
+    public static void openTestURL(String URL){
+        driver.get(URL);
+    }
 }

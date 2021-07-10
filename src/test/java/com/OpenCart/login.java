@@ -7,8 +7,9 @@ import org.openqa.selenium.WebElement;
 public class login extends TestBase {
     public static void main(String[] args) {
         chromeLaunch();
+        firefoxLaunch();
         TC_001_Valid();
-       // TC_002_InValid();
+        TC_002_InValid();
         //chromeClose();
     }
     public static void TC_001_Valid(){
@@ -23,10 +24,20 @@ public class login extends TestBase {
         //step4
         WebElement LoginBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input"));
         LoginBtn.click();
-        WebElement Logout=driver.findElement(By.linkText("Logout"));
-        Logout.click();
 
+        //logic develop
+        //logic pass
+        String Exp_title="My Account";
+        String Act_title=driver.getTitle();
 
+        if(Exp_title.equals(Act_title)){
+            System.out.println("Test passed for valid data");
+            WebElement Logout=driver.findElement(By.linkText("Logout"));
+            Logout.click();
+        }
+        else{
+            System.out.println("Test failed for valid data,yahoooo Bug found");
+        }
 
     }
     public static void TC_002_InValid(){
@@ -40,6 +51,18 @@ public class login extends TestBase {
         Password.sendKeys("123456");
         //step4
         WebElement LoginBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input"));
+        //login pass
+        String Exp_data="My Account";
+        String Act_data=driver.getTitle();
+        if(!Exp_data.equals(Act_data)){
+            System.out.println("Test passed for invalid data");
+        }
+        else{
+            System.out.println("Test failed for invalid data,yahooo Bug found.");
+            //logout
+            WebElement Logout=driver.findElement(By.linkText("Logout"));
+            Logout.click();
+        }
         LoginBtn.click();
         WebElement LogoutBtn=driver.findElement(By.id("logout"));
         LogoutBtn.click();
