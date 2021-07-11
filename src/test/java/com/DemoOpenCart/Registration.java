@@ -1,17 +1,14 @@
 package com.DemoOpenCart;
 
 import com.Base.TestBase;
+import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class Registration extends TestBase {
     public static void main(String[] args) {
-        firefoxLaunch();
-        openTestURL("https://demo.opencart.com/");
-        NavigateTo();
+        chromeLaunch();
         TC_003_Valid();
-        NavigateBack();
-        NavigateForward();
         //TC_004_InValid();
     }
     public static void TC_003_Valid(){
@@ -19,12 +16,14 @@ public class Registration extends TestBase {
 
         WebElement FirstName=driver.findElement(By.id("input-firstname"));
         FirstName.sendKeys("motahara");
+       // getElementByCSSandType("input-firstname","motahara");
 
         WebElement LastName=driver.findElement(By.id("input-lastname"));
         LastName.sendKeys("mishu");
 
+        final String randomEmail = randomEmail();
         WebElement Email=driver.findElement(By.id("input-email"));
-        Email.sendKeys("mishu@gmail.com");
+        Email.sendKeys(randomEmail);
 
         WebElement Telephone=driver.findElement(By.id("input-telephone"));
         Telephone.sendKeys("01234567891");
@@ -35,11 +34,32 @@ public class Registration extends TestBase {
         WebElement PasswordConfirm=driver.findElement(By.id("input-confirm"));
         PasswordConfirm.sendKeys("12345678");
 
-        //WebElement PrivacyPolicy=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]"));
-        //PrivacyPolicy.click();
+        WebElement PrivacyPolicy=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]"));
+        PrivacyPolicy.click();
 
-        //WebElement ContinueBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]"));
-        //ContinueBtn.click();
+        WebElement ContinueBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]"));
+        ContinueBtn.click();
+        String Exp_urlAd="https://demo.opencart.com/index.php?route=account/success";
+        String Act_urlAd=driver.getCurrentUrl();
+        if(Exp_urlAd.equals(Act_urlAd)){
+            System.out.println("Registration done successfully");
+        }
+        else{
+            System.out.println("Registration Failed, Bug Found!!!");
+        }
+        //click continue after registration
+        getElementByCSSandClick("#content > div > div > a");
+
+        //logout
+        getElementByCSSandClick("#top-links > ul > li.dropdown.open > ul > li:nth-child(5) > a");
+        /*String Exp_urlAd2="https://demo.opencart.com/index.php?route=account/logout";
+        String Act_urlAd2=driver.getCurrentUrl();
+        if(Exp_urlAd2.equals(Act_urlAd2)){
+            System.out.println("Logout successfully");
+        }
+        else{
+            System.out.println("Logout Failed, Bug Found!!!");
+        }*/
 
         //logic develop
         //logic pass
@@ -56,22 +76,6 @@ public class Registration extends TestBase {
         else{
             System.out.println("Test failed for valid data, Bug FOUND!!!");
         }*/
-    }
-
-    public static void NavigateTo(){
-        driver.navigate().to("https://demo.opencart.com/index.php?route=account/register");
-        System.out.println("Navigate To:"+driver.getTitle());
-    }
-    public static void NavigateBack(){
-        driver.navigate().back();
-        System.out.println("Navigate Back To:"+driver.getTitle());
-    }
-    public static void NavigateForward(){
-        driver.navigate().forward();
-        System.out.println("Navigate Forward To:"+driver.getTitle());
-    }
-    public static void NavigateRefresh(){
-        driver.navigate().refresh();
     }
 
    /* public static void TC_004_InValid(){
