@@ -1,16 +1,18 @@
 package com.Base;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import java.util.UUID;
+
+import java.io.File;
+import java.io.IOException;
+
 
 public class TestBase {
     public static WebDriver driver;
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         chromeLaunch();
         chromeClose();
         firefoxLaunch();
@@ -52,8 +54,17 @@ public class TestBase {
     public static void getElementByCSSandClick(String locator){
         driver.findElement(By.cssSelector(locator)).click();
     }
+    public static void getElementByXpathAndClick(String locator){
+        driver.findElement(By.xpath(locator)).click();
+    }
     public static void getElementByCSSandType(String locator,String text){
         driver.findElement(By.cssSelector(locator)).sendKeys(text);
+    }
+    public static void getElementByIdandType(String locator,String text){
+        driver.findElement(By.id(locator)).sendKeys(text);
+    }
+    public static void getElementByTitleandClick(String locator){
+        driver.findElement(By.id(locator)).click();
     }
     public static void alertAccept(){
         driver.switchTo().alert().accept();
@@ -61,7 +72,12 @@ public class TestBase {
     public static void alertCancel(){
         driver.switchTo().alert().dismiss();
     }
-    public static String randomEmail() {
-        return "random-" + UUID.randomUUID().toString() + "@gmail.com";
+
+    public static void captureScreenshot(String name,String formate) throws IOException {
+        //take screenshot
+        File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //save screenshot
+        FileUtils.copyFile(srcFile,new File("./src/test/screenshots/" +name +formate),true);
+
     }
 }

@@ -21,9 +21,8 @@ public class Registration extends TestBase {
         WebElement LastName=driver.findElement(By.id("input-lastname"));
         LastName.sendKeys("mishu");
 
-        final String randomEmail = randomEmail();
         WebElement Email=driver.findElement(By.id("input-email"));
-        Email.sendKeys(randomEmail);
+        Email.sendKeys("mishu@gmail.com");
 
         WebElement Telephone=driver.findElement(By.id("input-telephone"));
         Telephone.sendKeys("01234567891");
@@ -47,20 +46,6 @@ public class Registration extends TestBase {
         else{
             System.out.println("Registration Failed, Bug Found!!!");
         }
-        //click continue after registration
-        getElementByCSSandClick("#content > div > div > a");
-
-        //logout
-        getElementByCSSandClick("#top-links > ul > li.dropdown.open > ul > li:nth-child(5) > a");
-        /*String Exp_urlAd2="https://demo.opencart.com/index.php?route=account/logout";
-        String Act_urlAd2=driver.getCurrentUrl();
-        if(Exp_urlAd2.equals(Act_urlAd2)){
-            System.out.println("Logout successfully");
-        }
-        else{
-            System.out.println("Logout Failed, Bug Found!!!");
-        }*/
-
         //logic develop
         //logic pass
         /*String Exp_urlAd="https://demo.opencart.com/index.php?route=account/success";
