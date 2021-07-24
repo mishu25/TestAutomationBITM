@@ -1,0 +1,9 @@
+<suite name="First Test suite">
+    <test name="TestNG Test">
+        <classes>
+            <class name="com.TestNG.TestNGbasic"></class>
+            <class name="com.TestNG.AnnotationsOrder"></class>
+        </classes>
+    </test>
+
+</suite>

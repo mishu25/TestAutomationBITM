@@ -7,23 +7,23 @@ import org.openqa.selenium.WebElement;
 import java.io.IOException;
 
 
-public class login extends TestBase {
+public class Login extends TestBase {
     public static void main(String[] args) throws IOException {
         chromeLaunch();
         //firefoxLaunch();
         TC_001_Valid();
-        TC_002_InValid();
-        chromeClose();
+        //TC_002_InValid();
+        //chromeClose();
     }
     public static void TC_001_Valid() throws IOException {
         //1st step
         driver.get("https://demo.opencart.com/index.php?route=account/login");
         //2nd step
         WebElement Email=driver.findElement(By.id("input-email"));
-        Email.sendKeys("mishu@gmail.com");
+        Email.sendKeys("mishu001@gmail.com");
         //3rd step
         WebElement Password=driver.findElement(By.id("input-password"));
-        Password.sendKeys("12345678");
+        Password.sendKeys("123456");
         //step4
         WebElement LoginBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div/form/input"));
         LoginBtn.click();

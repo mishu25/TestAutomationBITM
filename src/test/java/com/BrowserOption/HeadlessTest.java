@@ -1,7 +1,7 @@
 package com.BrowserOption;
 
 import com.Base.TestBase;
-import com.OpenCart.login;
+import com.OpenCart.Login;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,7 +20,7 @@ public class HeadlessTest extends TestBase {
         ChromeOptions crobj=new ChromeOptions();
         crobj.setHeadless(true);
         driver=new ChromeDriver(crobj);
-        login.TC_001_Valid();
+        Login.TC_001_Valid();
         System.out.println("Headless Chrome Test done");
 
     }
@@ -29,7 +29,7 @@ public class HeadlessTest extends TestBase {
         FirefoxOptions frobj=new FirefoxOptions();
         frobj.setHeadless(true);
         driver=new FirefoxDriver(frobj);
-        login.TC_002_InValid();
+        Login.TC_002_InValid();
         System.out.println("Headless Firefox Test done");
 
     }

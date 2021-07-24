@@ -22,16 +22,16 @@ public class Registration extends TestBase {
         LastName.sendKeys("mishu");
 
         WebElement Email=driver.findElement(By.id("input-email"));
-        Email.sendKeys("mishu@gmail.com");
+        Email.sendKeys("mishu001@gmail.com");
 
         WebElement Telephone=driver.findElement(By.id("input-telephone"));
         Telephone.sendKeys("01234567891");
 
         WebElement Password=driver.findElement(By.id("input-password"));
-        Password.sendKeys("12345678");
+        Password.sendKeys("123456");
 
         WebElement PasswordConfirm=driver.findElement(By.id("input-confirm"));
-        PasswordConfirm.sendKeys("12345678");
+        PasswordConfirm.sendKeys("123456");
 
         WebElement PrivacyPolicy=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]"));
         PrivacyPolicy.click();
