@@ -54,8 +54,17 @@ public class TestBase {
     public static void getElementByCSSandClick(String locator){
         driver.findElement(By.cssSelector(locator)).click();
     }
+    public static void elementByXpathAndType(String locator, String text){
+         driver.findElement(By.xpath(locator)).sendKeys(text);
+    }
     public static void getElementByXpathAndClick(String locator){
         driver.findElement(By.xpath(locator)).click();
+    }
+    public static void elementByIdAndType(String locator, String text){
+        driver.findElement(By.id(locator)).sendKeys(text);
+    }
+    public static void getElementByIdAndClick(String locator){
+        driver.findElement(By.id(locator)).click();
     }
     public static void getElementByCSSandType(String locator,String text){
         driver.findElement(By.cssSelector(locator)).sendKeys(text);

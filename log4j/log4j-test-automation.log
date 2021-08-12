@@ -1,5 +1,27 @@
-[INFO ] 2021-07-24 23:54:41.125 [main] Log - Open Login URL
-[INFO ] 2021-07-24 23:54:43.242 [main] Log - Type Email
-[INFO ] 2021-07-24 23:54:43.480 [main] Log - Type Password
-[INFO ] 2021-07-24 23:54:46.713 [main] Log - Click on Login Button
-[INFO ] 2021-07-24 23:54:46.728 [main] Log - Test passed for valid data.
+[INFO ] 2021-08-12 21:32:46.257 [main] Log - Chrome Launch successfully.
+[INFO ] 2021-08-12 21:33:01.598 [main] Log - Registration page open successfully.
+[INFO ] 2021-08-12 21:33:09.464 [main] Log - Type Firstname:Motahara
+[INFO ] 2021-08-12 21:33:09.706 [main] Log - Type Lastname:Mishu
+[INFO ] 2021-08-12 21:33:10.115 [main] Log - Type Email:motahara@gmail.com
+[INFO ] 2021-08-12 21:33:10.392 [main] Log - Type Telephone:13033892
+[INFO ] 2021-08-12 21:33:11.108 [main] Log - Type password:1234
+[INFO ] 2021-08-12 21:33:11.305 [main] Log - Type confirm password:1234
+[INFO ] 2021-08-12 21:33:14.059 [main] Log - Check On Privacy Policy.
+[INFO ] 2021-08-12 21:33:16.958 [main] Log - Click on Continue Button.
+[INFO ] 2021-08-12 21:33:31.398 [main] Log - Type Firstname:Mishu
+[INFO ] 2021-08-12 21:33:31.534 [main] Log - Type Lastname:Mahbub
+[INFO ] 2021-08-12 21:33:31.782 [main] Log - Type Email:mishu@gmail.com
+[INFO ] 2021-08-12 21:33:32.132 [main] Log - Type Telephone:12326984
+[INFO ] 2021-08-12 21:33:32.497 [main] Log - Type password:12345
+[INFO ] 2021-08-12 21:33:32.660 [main] Log - Type confirm password:12345
+[INFO ] 2021-08-12 21:33:32.766 [main] Log - Check On Privacy Policy.
+[INFO ] 2021-08-12 21:33:34.597 [main] Log - Click on Continue Button.
+[INFO ] 2021-08-12 21:33:43.135 [main] Log - Type Firstname:Lamya
+[INFO ] 2021-08-12 21:33:43.271 [main] Log - Type Lastname:Mahisha
+[INFO ] 2021-08-12 21:33:43.428 [main] Log - Type Email:lamya@gmail.com
+[INFO ] 2021-08-12 21:33:43.563 [main] Log - Type Telephone:12363243
+[INFO ] 2021-08-12 21:33:43.763 [main] Log - Type password:123456
+[INFO ] 2021-08-12 21:33:43.908 [main] Log - Type confirm password:123456
+[INFO ] 2021-08-12 21:33:43.997 [main] Log - Check On Privacy Policy.
+[INFO ] 2021-08-12 21:33:45.534 [main] Log - Click on Continue Button.
+[INFO ] 2021-08-12 21:34:04.042 [main] Log - Chrome close successfully.

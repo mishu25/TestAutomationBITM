@@ -1,0 +1,30 @@
+[INFO ] 2021-08-11 23:07:01.869 [main] Log - Chrome Launch Successfully.
+[INFO ] 2021-08-11 23:07:20.319 [main] Log - Login Page Open Successfully.
+[INFO ] 2021-08-11 23:07:29.204 [main] Log - Type Email: email11@test.com
+[INFO ] 2021-08-11 23:07:29.653 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:07:36.021 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:07:46.653 [main] Log - Type Email: email22@test.com
+[INFO ] 2021-08-11 23:07:46.932 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:07:49.024 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:07:54.959 [main] Log - Type Email: email33@test.com
+[INFO ] 2021-08-11 23:07:55.087 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:07:56.866 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:07:58.048 [main] Log - Type Email: mishu001@gmail.com
+[INFO ] 2021-08-11 23:07:58.175 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:08:01.519 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:08:07.466 [main] Log - Chrome Close Successfully.
+[INFO ] 2021-08-11 23:15:36.278 [main] Log - Chrome Launch Successfully.
+[INFO ] 2021-08-11 23:15:54.409 [main] Log - Login Page Open Successfully.
+[INFO ] 2021-08-11 23:16:13.299 [main] Log - Type Email: email11@test.com
+[INFO ] 2021-08-11 23:16:13.840 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:16:18.894 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:16:32.224 [main] Log - Type Email: email22@test.com
+[INFO ] 2021-08-11 23:16:32.381 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:16:42.592 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:16:53.709 [main] Log - Type Email: email33@test.com
+[INFO ] 2021-08-11 23:16:53.869 [main] Log - Type Password: 123456
+[INFO ] 2021-08-11 23:16:57.974 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:16:58.466 [main] Log - Type Email: 
+[INFO ] 2021-08-11 23:16:58.587 [main] Log - Type Password: 
+[INFO ] 2021-08-11 23:17:02.627 [main] Log - Click on Login Button
+[INFO ] 2021-08-11 23:17:07.970 [main] Log - Chrome Close Successfully.

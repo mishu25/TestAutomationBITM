@@ -1,9 +1,9 @@
 <suite name="First Test suite">
-    <test name="TestNG Test">
+    <test name="Login Valid Test">
         <classes>
-            <class name="com.TestNG.TestNGbasic"></class>
-            <class name="com.TestNG.AnnotationsOrder"></class>
+            <class name="com.TestNG.RegistrationTest"></class>
         </classes>
     </test>
+
 
 </suite>

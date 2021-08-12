@@ -1,0 +1,32 @@
+[INFO ] 2021-08-06 00:34:42.976 [main] Log - Chrome Launch Successfully.
+[INFO ] 2021-08-06 00:34:46.044 [main] Log - Chrome Close Successfully.
+[INFO ] 2021-08-06 23:40:44.052 [main] Log - Chrome Launch Successfully.
+[INFO ] 2021-08-06 23:41:01.076 [main] Log - Login Page Open Successfully.
+[INFO ] 2021-08-06 23:41:13.412 [main] Log - Type Email: email11@test.com
+[INFO ] 2021-08-06 23:41:13.720 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:41:18.257 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:41:28.949 [main] Log - Type Email: email22@test.com
+[INFO ] 2021-08-06 23:41:29.111 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:41:31.309 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:41:32.041 [main] Log - Type Email: email33@test.com
+[INFO ] 2021-08-06 23:41:32.158 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:41:33.913 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:41:35.224 [main] Log - Type Email: mishu001@gmail.com
+[INFO ] 2021-08-06 23:41:35.340 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:41:39.552 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:41:51.541 [main] Log - Chrome Close Successfully.
+[INFO ] 2021-08-06 23:46:09.119 [main] Log - Chrome Launch Successfully.
+[INFO ] 2021-08-06 23:46:23.057 [main] Log - Login Page Open Successfully.
+[INFO ] 2021-08-06 23:46:29.233 [main] Log - Type Email: email11@test.com
+[INFO ] 2021-08-06 23:46:29.421 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:46:32.086 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:46:38.260 [main] Log - Type Email: email22@test.com
+[INFO ] 2021-08-06 23:46:38.389 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:46:40.310 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:46:41.532 [main] Log - Type Email: email33@test.com
+[INFO ] 2021-08-06 23:46:41.637 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:46:43.798 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:46:44.544 [main] Log - Type Email: mishu001@gmail.com
+[INFO ] 2021-08-06 23:46:44.663 [main] Log - Type Password: 123456
+[INFO ] 2021-08-06 23:46:48.096 [main] Log - Click on Login Button
+[INFO ] 2021-08-06 23:46:51.454 [main] Log - Chrome Close Successfully.
