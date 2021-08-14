@@ -64,7 +64,6 @@ public class Login_Extent {
         Log.info("Login Page Open Successfully.");
         logger.log(Status.INFO,"Login Page Open Successfully.");
 
-
         //Excel
         Xls_Reader reader=new Xls_Reader("./src/test/resources/LoginData.xlsx");
         String sheetName="Sheet1";
