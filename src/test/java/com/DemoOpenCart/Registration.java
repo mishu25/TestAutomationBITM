@@ -1,7 +1,6 @@
 package com.DemoOpenCart;
 
 import com.Base.TestBase;
-import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
