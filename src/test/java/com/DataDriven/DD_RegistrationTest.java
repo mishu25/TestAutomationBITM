@@ -93,7 +93,6 @@ public class DD_RegistrationTest {
             Continue.click();
             Log.info("Click on Continue Button.");
 
-
             //Logic Develop
             String Exp_url =  "https://demo.opencart.com/index.php?route=account/register";
             String Act_url = driver.getCurrentUrl();
@@ -105,8 +104,7 @@ public class DD_RegistrationTest {
                 //Excel write
                 reader.setCellData(sheetName,"Result",rowNum,"Not Login! Test Failed.");
             }
-
-
+            
             //Assertion
             //Assert.assertEquals(Act_url, Exp_url);
 
