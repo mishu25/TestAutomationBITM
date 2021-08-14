@@ -13,6 +13,7 @@ public class EndToEndTestAutomation extends TestBase {
         openTestURL("https://demo.opencart.com/index.php?route=account/login");
         FillUpLoginField(email);
     }
+    
     public static String  FillUpRegField(){
         getElementByIdandType("input-firstname","mishu");
         getElementByIdandType("input-lastname","mishu");
@@ -46,6 +47,7 @@ public class EndToEndTestAutomation extends TestBase {
         }
         return email;
     }
+
     public static void FillUpLoginField(String email){
         getElementByIdandType("input-email",email);
         getElementByIdandType("input-password","12345678");
