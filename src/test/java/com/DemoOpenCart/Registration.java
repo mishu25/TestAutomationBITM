@@ -5,6 +5,14 @@ import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+/*
+Steps:
+-> Go to Registration page.
+-> Fill up all Field.
+-> Agree to the Privacy Policy and then
+-> Register.
+ */
+
 public class Registration extends TestBase {
     public static void main(String[] args) {
         chromeLaunch();
@@ -38,17 +46,10 @@ public class Registration extends TestBase {
 
         WebElement ContinueBtn=driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[2]"));
         ContinueBtn.click();
-        String Exp_urlAd="https://demo.opencart.com/index.php?route=account/success";
-        String Act_urlAd=driver.getCurrentUrl();
-        if(Exp_urlAd.equals(Act_urlAd)){
-            System.out.println("Registration done successfully");
-        }
-        else{
-            System.out.println("Registration Failed, Bug Found!!!");
-        }
+
         //logic develop
         //logic pass
-        /*String Exp_urlAd="https://demo.opencart.com/index.php?route=account/success";
+        String Exp_urlAd="https://demo.opencart.com/index.php?route=account/success";
         String Act_urlAd=driver.getCurrentUrl();
         String Exp_warning="Warning: E-Mail Address is already registered!";
         String Act_warning=driver.findElement(By.cssSelector("#account-register > div.alert.alert-danger.alert-dismissible")).getText();
@@ -60,7 +61,7 @@ public class Registration extends TestBase {
         }
         else{
             System.out.println("Test failed for valid data, Bug FOUND!!!");
-        }*/
+        }
     }
 
    /* public static void TC_004_InValid(){
