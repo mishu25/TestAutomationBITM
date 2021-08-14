@@ -9,7 +9,6 @@ public class iFramesTest extends TestBase {
         chromeLaunch();
         openTestURL("https://the-internet.herokuapp.com/iframe");
         singleFrame();
-
     }
     public static void singleFrame(){
         //locate iFrame

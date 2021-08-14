@@ -10,6 +10,7 @@ public class iFramehtmlTest extends TestBase {
         openTestURL("https://www.w3schools.com/html/html_iframe.asp");
         htmlFrame();
     }
+
     public static void htmlFrame(){
         WebElement frame= driver.findElement(By.xpath("//*[@id=\"main\"]/div[3]/iframe"));
         driver.switchTo().frame(frame);

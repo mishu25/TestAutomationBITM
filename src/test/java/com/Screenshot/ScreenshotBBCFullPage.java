@@ -17,10 +17,9 @@ public class ScreenshotBBCFullPage extends TestBase {
         openTestURL("https://www.bbc.com/");
         screenshoot();
         chromeClose();
-
     }
     public static void screenshoot() throws IOException {
-        //Wait untill page load
+        //Wait until page load
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         //Page scroll
