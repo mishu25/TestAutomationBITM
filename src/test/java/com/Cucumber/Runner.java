@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         "pretty","html:CucumberTestReport/CucumberReport.html",
         },
         monochrome = true
-
 )
 @RunWith(Cucumber.class)
 
