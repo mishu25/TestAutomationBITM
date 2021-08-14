@@ -6,6 +6,13 @@ import org.openqa.selenium.WebElement;
 
 import java.io.IOException;
 
+/*
+Steps:
+-> Go to login page.
+-> Type Email and Password.
+-> Click Login button.
+->Logout(if test passed)
+ */
 
 public class Login extends TestBase {
     public static void main(String[] args) throws IOException {
@@ -13,7 +20,7 @@ public class Login extends TestBase {
         //firefoxLaunch();
         TC_001_Valid();
         //TC_002_InValid();
-        //chromeClose();
+        chromeClose();
     }
     public static void TC_001_Valid() throws IOException {
         //1st step
@@ -34,9 +41,10 @@ public class Login extends TestBase {
         String Act_title=driver.getTitle();
 
         if(Exp_title.equals(Act_title)){
-            System.out.println("Test passed for valid data");
+            System.out.println("Test passed for valid data.");
             WebElement Logout=driver.findElement(By.linkText("Logout"));
             Logout.click();
+            System.out.println("Account Logout.");
             captureScreenshot("login valid", ".png");
         }
         else{
